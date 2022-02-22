@@ -43,18 +43,18 @@ const Container = styled.div`
     margin: 0;
   }
   .title-container {
-    background: blue;
+    /* background: blue; */
     padding-top: 60px;
     margin-bottom: 20px;
   }
   .dashboard-container {
-    background: green;
+    /* background: green; */
     display: flex;
     justify-content: center;
   }
 `;
 const Section1 = styled.section`
-  background: lavender;
+  /* background: lavender; */
   width: 100vw;
   height: 100vh;
 
