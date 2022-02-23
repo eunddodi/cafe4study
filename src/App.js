@@ -1,34 +1,49 @@
 /* eslint-disable */
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faAngleDown,
+  faCookieBite,
+  faHeart,
+} from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
     <Container>
       <Section1>
-        <h3>신촌 카공 카페 추천</h3>
-        <h1>Cafe4Study</h1>
+        <div>
+          <h3>신촌 카공 카페 추천</h3>
+          <h1>Cafe4Study</h1>
+          <FontAwesomeIcon
+            icon={faAngleDown}
+            className="search fa-3x fa-beat-fade"
+          />
+        </div>
       </Section1>
       <Section2>
         <div className="title-container">
+          <FontAwesomeIcon icon={faCookieBite} className="search fa-bounce" />
+
           <h1>Cafe4Study</h1>
         </div>
         <div className="dashboard-container">
           <iframe
-            src="https://public.tableau.com/views/MarketingActivityCalendar/MarketingActivityCalendar?:language=ko-KR&:display_count=n&:origin=viz_share_link"
-            width="1000px"
-            height="600px"
+            src="https://public.tableau.com/views/DigitalMarketingCampaignPerformanceDashboard/DigitalMarketingCampaignPerformanceDashboard?:language=ko-KR&:display_count=n&:origin=viz_share_link:embed=yes&:showVizHome=no"
+            width="1408px"
+            height="819px"
           ></iframe>
         </div>
       </Section2>
       <Section3>
         <div className="title-container">
+          <FontAwesomeIcon icon={faHeart} className="search fa-flip" />
           <h1>추천 카페 모아보기</h1>
         </div>
         <div className="dashboard-container">
           <iframe
-            src="https://public.tableau.com/views/MarketingActivityCalendar/MarketingActivityCalendar?:language=ko-KR&:display_count=n&:origin=viz_share_link"
-            width="1000px"
-            height="600px"
+            src="https://public.tableau.com/views/DigitalMarketingCampaignPerformanceDashboard/DigitalMarketingCampaignPerformanceDashboard?:language=ko-KR&:display_count=n&:origin=viz_share_link:embed=yes&:showVizHome=no"
+            width="1408px"
+            height="819px"
           ></iframe>
         </div>
       </Section3>
@@ -44,32 +59,57 @@ const Container = styled.div`
   }
   .title-container {
     /* background: blue; */
-    padding-top: 60px;
-    margin-bottom: 20px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #28220b;
   }
   .dashboard-container {
     /* background: green; */
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 `;
 const Section1 = styled.section`
-  /* background: lavender; */
   width: 100vw;
   height: 100vh;
-
+  background-image: url(/main_bg.jpeg);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: white;
+  position: relative;
+
+  div {
+    position: absolute;
+    bottom: 15%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 100px;
+  }
+  h3 {
+    font-size: 40px;
+  }
 `;
 const Section2 = styled.section`
-  background: pink;
   width: 100vw;
   height: 100vh;
+  display: grid;
+  grid-template-rows: 15% 85%;
+  background-color: #ece6cc;
 `;
 const Section3 = styled.section`
-  background: grey;
   width: 100vw;
   height: 100vh;
+  display: grid;
+  grid-template-rows: 15% 85%;
+  background-color: whitesmoke;
 `;
