@@ -28,9 +28,9 @@ function App() {
         </div>
         <div className="dashboard-container">
           <iframe
-            src="https://public.tableau.com/views/DigitalMarketingCampaignPerformanceDashboard/DigitalMarketingCampaignPerformanceDashboard?:language=ko-KR&:display_count=n&:origin=viz_share_link:embed=yes&:showVizHome=no"
-            width="1408px"
-            height="819px"
+            src="https://public.tableau.com/views/Cafe4Study_Dashboard/Cafe4Study_Dashboard01?:language=en-US&:display_count=n&:origin=viz_share_link:embed=yes&:showVizHome=no"
+            width="1166px"
+            height="595px"
           ></iframe>
         </div>
       </Section2>
@@ -41,9 +41,9 @@ function App() {
         </div>
         <div className="dashboard-container">
           <iframe
-            src="https://public.tableau.com/views/DigitalMarketingCampaignPerformanceDashboard/DigitalMarketingCampaignPerformanceDashboard?:language=ko-KR&:display_count=n&:origin=viz_share_link:embed=yes&:showVizHome=no"
-            width="1408px"
-            height="819px"
+            src="https://public.tableau.com/views/Cafe4Study_Dashboard2/Cafe4Study_Dashboard02?:language=ko-KR&:display_count=n&:origin=viz_share_link:embed=yes&:showVizHome=no"
+            width="1166px"
+            height="595px"
           ></iframe>
         </div>
       </Section3>
@@ -65,7 +65,7 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 32px;
+    font-size: 18px;
     color: #28220b;
   }
   .dashboard-container {
@@ -93,10 +93,10 @@ const Section1 = styled.section`
   }
 
   h1 {
-    font-size: 100px;
+    font-size: 60px;
   }
   h3 {
-    font-size: 40px;
+    font-size: 28px;
   }
 `;
 const Section2 = styled.section`
